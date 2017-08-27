@@ -18,8 +18,8 @@ class CreateResponsTable extends Migration
             $table->integer('user_id');
             $table->integer('kuesioner_id');
             $table->integer('pertanyaan_id');
-            $table->integer('pilihan_jawaban_id');
-            $table->string('jawaban_text');
+            $table->integer('pilihan_jawaban_id')->nullable();
+            $table->string('jawaban_text')->nullable();
             $table->timestamps();
         });
     }

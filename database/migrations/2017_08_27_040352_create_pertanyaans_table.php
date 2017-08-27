@@ -15,6 +15,7 @@ class CreatePertanyaansTable extends Migration
     {
         Schema::create('pertanyaans', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('nomor_urut')->nullable();
             $table->text('pertanyaan');
             $table->integer('kuesioner_id');
             $table->timestamps();

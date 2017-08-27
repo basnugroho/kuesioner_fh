@@ -13,7 +13,7 @@ class CreateResponUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('respon_tag', function (BluePrint $table) {
+        Schema::create('respon_user', function (BluePrint $table) {
             $table->increments('id');
             $table->integer('user_id');
             $table->integer('respon_id');
