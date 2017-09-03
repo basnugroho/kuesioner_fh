@@ -48,7 +48,7 @@ Route::get('/profile/{id}', [
 ]);
 Route::post('/profile/update/{id}', [
     'uses' => 'UsersController@update',
-    'as' => 'user.profile.update'
+    'as' => 'user.update'
 ]);
 
 Route::get('email', function() {
