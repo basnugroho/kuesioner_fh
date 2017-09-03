@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-    <h1>nama: {{ $title }}</h1>
-    <p>email: {{ $content }}</p>
-    <p>name: {{ $name }}</p>
+@extends('layouts.app')
+@section('content')
+    <p>dari: {{ $name }}</p>
+    <p>email: {{ $title }}</p>
     <p>phone: {{ $phone }}</p>
-</body>
-</html>
+    <p>pesan: {{ $content }}</p>
+@stop

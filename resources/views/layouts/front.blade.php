@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -20,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('freelancer/css/freelancer.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.css">
     <style>
       #jdl{
           background-color: #cccccc;
@@ -338,6 +337,17 @@
 
     <!-- Custom scripts for this template -->
     <script src="{{ asset('freelancer/js/freelancer.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+    <script>
+        @if(Session::has('success'))
+            toastr.success('{{ Session::get('success') }}')
+        @endif
+
+        @if(Session::has('info'))
+            toastr.info('{{ Session::get('info') }}')
+        @endif
+    </script>
+    @yield('scripts')
 
     @yield('scripts')
 

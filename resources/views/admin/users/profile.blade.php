@@ -22,7 +22,7 @@
                 </div>
                 <div class="form-group">
                     <label for="nrp">Email</label>
-                    <input type="email" name="email" class="form-control" value="{{ $user->email ? $profile->email : '' }}" {{ Auth::user()->role_id == 1 ? "":'disabled'}}>
+                    <input type="email" name="email" class="form-control" value="{{ $user->email ? $user->email : '' }}" {{ Auth::user()->role_id == 1 ? "":'disabled'}}>
                 </div>
                 <div class="form-group">
                     <label for="jenis_kelamin">Jenis Kelamin</label>
