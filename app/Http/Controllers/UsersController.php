@@ -48,14 +48,15 @@ class UsersController extends Controller
 
     public function profile ($id) {
         $user = User::find($id);
+        $profile = $user->profile;
 
-        if(!$user->has('profile')) {
+        if(!$user->profile) {
             Profile::create([
                 'user_id' => $user->id
             ]);
+            
         }
 
-        $profile = $user->profile;
         return view('admin.users.profile')->with('user', $user)
                                           ->with('profile', $profile);
     }
