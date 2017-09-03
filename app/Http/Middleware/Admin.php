@@ -1,26 +1,26 @@
 <?php
 
 namespace App\Http\Middleware;
-
+use Auth;
+use Session;
 use Closure;
-use Illuminate\Support\Facades\Auth;
 
-class RedirectIfAuthenticated
+class Admin
 {
     /**
      * Handle an incoming request.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
-     * @param  string|null  $guard
      * @return mixed
      */
-    public function handle($request, Closure $next, $guard = null)
+    public function handle($request, Closure $next)
     {
-        if (Auth::guard($guard)->check()) {
-            return redirect('/admin');
+        if(!Auth::user()->role_id == 1)
+        {
+            Session::flash('info', 'You dont have permission to perform this action');
+            return redirect()->back();
         }
-
         return $next($request);
     }
 }

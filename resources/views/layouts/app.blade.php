@@ -4,21 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Alumni Fakultas Hukum</title>
 
     <!-- Styles -->
+    @yield('styles')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.css">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-
+                    
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
@@ -29,7 +31,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        Alumni Fakultas Hukum
                     </a>
                 </div>
 
@@ -71,10 +73,50 @@
             </div>
         </nav>
 
-        @yield('content')
+        <div class="container">
+            <div class="row">
+                @if(Auth::check())
+                <div class="col-lg-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="{{ route('home')}}">Home</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{{ route('user.profile', ['id' => Auth::user()->id])}}">Profile</a>
+                        </li>
+                        @if(Auth::user()->role_id == 1)
+                        <li class="list-group-item">
+                            <a href="{{ route('user.index') }}">All Users</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{{ route('user.create')}}">Create User</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{{ route('setting')}}">Setting</a>
+                        </li>
+                        @endif
+                    </ul>
+                </div>
+                @endif
+                <div class="col-lg-8">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+    <script>
+        @if(Session::has('success'))
+            toastr.success('{{ Session::get('success') }}')
+        @endif
+
+        @if(Session::has('info'))
+            toastr.info('{{ Session::get('info') }}')
+        @endif
+    </script>
+    @yield('scripts')
 </body>
 </html>

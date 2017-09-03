@@ -30,6 +30,9 @@ class User extends Authenticatable
     public function role () {
         return $this->hasOne('App\Role');
     }
+    public function profile () {
+        return $this->hasOne('App\Profile');
+    }
 
     public function respons() {
         return $this->belongsToMany('App\Respon');

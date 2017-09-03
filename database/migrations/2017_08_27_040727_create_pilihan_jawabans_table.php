@@ -17,6 +17,7 @@ class CreatePilihanJawabansTable extends Migration
             $table->increments('id');
             $table->string('jawaban');
             $table->integer('pertanyaan_id');
+            $table->integer('golongan_id')->nullable();
             $table->timestamps();
         });
     }

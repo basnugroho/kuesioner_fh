@@ -16,12 +16,15 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->text('alamat')->nullable();
-            $table->date('tanggal_lahir')->nullable();
-            $table->tinyInteger('jenis_kelamin')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('facebook')->nullable();
-            $table->string('instagram')->nullable();
+            $table->text('nama_lengkap')->nullable();
+            $table->text('avatar')->nullable();
+            $table->text('nrp')->nullable();
+            $table->tinyInteger('jenis_kelamin')->nullable()->default();
+            $table->text('asal_smu')->nullable();
+            $table->text('kota_smu')->nullable();
+            $table->text('alamat_kantor')->nullable();
+            $table->text('alamat_rumah')->nullable();
+            $table->text('phone')->nullable();
             $table->timestamps();
         });
     }

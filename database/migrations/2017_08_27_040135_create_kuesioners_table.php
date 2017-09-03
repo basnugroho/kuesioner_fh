@@ -16,6 +16,7 @@ class CreateKuesionersTable extends Migration
         Schema::create('kuesioners', function (Blueprint $table) {
             $table->increments('id');
             $table->string('judul');
+            $table->string('images')->nullable();
             $table->timestamps();
         });
     }
