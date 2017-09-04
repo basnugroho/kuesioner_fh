@@ -50,13 +50,12 @@ class UsersController extends Controller
         $user = User::find($id);
         $profile = $user->profile;
 
-        if(!$user->profile) {
+        if(!isset($user->profile)) {
             Profile::create([
                 'user_id' => $user->id
             ]);
-            
         }
-
+        
         return view('admin.users.profile')->with('user', $user)
                                           ->with('profile', $profile);
     }
