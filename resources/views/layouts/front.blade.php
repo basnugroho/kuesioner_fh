@@ -50,6 +50,13 @@
       iframe{
         overflow:hidden;
       }
+      #front {
+        background-image: url("freelancer/img/aa.jpg");
+        background-repeat: no-repeat;
+        background-position: stretch;
+        background-size:cover;
+        height: 700px;
+      }
   </style>
 
   </head>
@@ -100,9 +107,9 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <img class="img-fluid" src="{{ asset('freelancer/img/profile.png') }}" alt="">
+    <header class="masthead" id="front">
+      <div class="container" >
+        
         <div class="intro-text">
           <span class="name">{{ $setting->site_name }}</span>
           <hr class="star-light">
@@ -124,7 +131,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/kuesioner_a.jpg') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -134,7 +141,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cake.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/kuesioner_b.jpg') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -144,7 +151,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/circus.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/kuesioner_c.jpg') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -154,7 +161,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/game.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/kuesioner_d.jpg') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -164,7 +171,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/safe.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/kuesioner_e.jpg') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -174,7 +181,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/submarine.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/kuesioner_hukum.jpg') }}" alt="">
             </a>
           </div>
         </div>

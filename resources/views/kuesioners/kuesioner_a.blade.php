@@ -57,7 +57,8 @@
 
 <div class="container">
     <br>
-    <a class="btn btn-success" href="{{ route('index') }}">Kembali</a>
+    <a class="btn btn-info pull-left" href="{{ route('index') }}">Kembali</a>
+    <a class="btn btn-success pull-right" href="{{ route('index') }}">Selesai</a>
     <hr class="star-primary">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd07ThTymWJihmGoaUTLLPJXGREDqx8QbpUlUTulJ5-L3lKqg/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div>
