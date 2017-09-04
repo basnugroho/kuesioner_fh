@@ -14,7 +14,7 @@
                 </div>
                 <div class="form-group">
                     <label for="avatar">Unggah/GantiFoto</label>
-                    <input type="file" name="avatar" class="form-control" value="">
+                    <input type="file" name="avatar" class="form-control" value="" disabled>
                 </div>
                 <div class="form-group">
                     <label for="nrp">NRP</label>

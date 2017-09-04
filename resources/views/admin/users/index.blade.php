@@ -16,6 +16,9 @@
                 NRP Register
             </th>
             <th>
+                NRP
+            </th>
+            <th>
                 Edit Profile
             </th>
             <th>
@@ -28,7 +31,8 @@
             <tr>
                 <td><img src="{{ isset($user->profile->avatar) ? asset($user->profile->avatar) : '' }}"  alt="{{ $user->name }}" width="60px"></td>
                 <td>{{ isset($user->profile->nama_lengkap) ? $user->profile->nama_lengkap : $user->name  }}</td>
-                <td></td>
+                <td>{{ isset($user->nrp) ? $user->nrp : 'not provided' }}</td>
+                <td>{{ isset($user->profile->nrp) ? $user->profile->nrp : 'unverified' }}</td>
                 <td>
                     <a href="{{ route('user.profile', ['id'=>$user->id])}}" class="btn btn-xs btn-info">Edit</a>
                 </td>

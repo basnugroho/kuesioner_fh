@@ -64,6 +64,7 @@ class UsersController extends Controller
     public function update (Request $request, $id) {
         $profile = Profile::find($id);
         $profile->nama_lengkap = request()->nama_lengkap;
+        $profile->nrp = request()->nrp;
         $profile->user->name = request()->nama_lengkap;
         $profile->jenis_kelamin = request()->jenis_kelamin;
         $profile->asal_smu = request()->asal_smu;
