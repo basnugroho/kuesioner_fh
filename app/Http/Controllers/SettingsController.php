@@ -25,7 +25,7 @@ class SettingsController extends Controller
         $setting->address = request()->address;
         $setting->phone = request()->phone;
         $setting->save();
-        Session::flash('succces', 'Setting Saved');
-        return redirect()->back();
+        Session::flash('success', 'Setting Saved!');
+        return redirect()->route('setting');
     }
 }

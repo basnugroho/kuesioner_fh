@@ -6,7 +6,7 @@
             <b>Edit Profile</b>
         </div>
         <div class="panel-body">
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="{{ route('user.update', ['id' => $user->profile->id ])}}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="name">Name Lengkap (dengan gelar)</label>
