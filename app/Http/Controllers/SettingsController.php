@@ -13,7 +13,7 @@ class SettingsController extends Controller
     }
 
     public function update ($id) {
-        //dd(request()->all());
+
         $setting = Setting::find($id);
         $setting->site_name = request()->site_name;
         $setting->tagline = request()->tagline;

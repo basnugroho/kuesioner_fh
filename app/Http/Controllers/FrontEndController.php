@@ -18,3 +18,4 @@ class FrontEndController extends Controller
                             ->with('setting', Setting::first());
     }
 }
+

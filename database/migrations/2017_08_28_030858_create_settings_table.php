@@ -17,7 +17,7 @@ class CreateSettingsTable extends Migration
             $table->increments('id');
             $table->string('site_name')->nullable();
             $table->string('tagline')->nullable();
-            $table->string('about')->nullable();
+            $table->text('about')->nullable();
             $table->string('email')->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();

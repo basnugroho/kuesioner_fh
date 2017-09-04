@@ -15,6 +15,7 @@ class UsersController extends Controller
     } 
 
     public function index() {
+        //return redirect()->back();
         return view('admin.users.index')->with('users', User::all());
     }
 

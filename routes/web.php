@@ -77,6 +77,7 @@ Route::get('/create/profile', function () {
     ]);
 })->name('create.profile');
 
+
 Route::get('/kuesioner_a', [
     'uses' => 'KuesionersController@kuesionerA',
     'as' => 'kuesioner.a'
