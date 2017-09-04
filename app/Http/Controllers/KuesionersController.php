@@ -10,13 +10,13 @@ class KuesionersController extends Controller
         return view ('kuesioners.kuesioner_a');
     }
     public function kuesionerB () {
-        return view ('kuesioners.kuesioner_a');
+        return view ('kuesioners.kuesioner_b');
     }
     public function kuesionerC () {
-        return view ('kuesioners.kuesioner_a');
+        return view ('kuesioners.kuesioner_c');
     }
     public function kuesionerD () {
-        return view ('kuesioners.kuesioner_a');
+        return view ('kuesioners.kuesioner_d');
     }
     public function kuesionerE () {
         return view ('kuesioners.kuesioner_e');
