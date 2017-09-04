@@ -81,3 +81,23 @@ Route::get('/kuesioner_a', [
     'uses' => 'KuesionersController@kuesionerA',
     'as' => 'kuesioner.a'
 ]);
+Route::get('/kuesioner_b', [
+    'uses' => 'KuesionersController@kuesionerB',
+    'as' => 'kuesioner.b'
+]);
+Route::get('/kuesioner_c', [
+    'uses' => 'KuesionersController@kuesionerC',
+    'as' => 'kuesioner.c'
+]);
+Route::get('/kuesioner_d', [
+    'uses' => 'KuesionersController@kuesionerD',
+    'as' => 'kuesioner.d'
+]);
+Route::get('/kuesioner_e', [
+    'uses' => 'KuesionersController@kuesionerE',
+    'as' => 'kuesioner.e'
+]);
+Route::get('/kuesioner_hukum', [
+    'uses' => 'KuesionersController@kuesionerHukum',
+    'as' => 'kuesioner.hukum'
+]);

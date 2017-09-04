@@ -128,58 +128,55 @@
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-              <div class="caption">
+            <a class="portfolio-link" href="{{ route('kuesioner.b') }}">
+              <!-- <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cake.png') }}" alt="">
+              </div> -->
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-              <div class="caption">
+            <a class="portfolio-link" href="{{ route('kuesioner.c') }}">
+              <!-- <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/circus.png') }}" alt="">
+              </div> -->
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-              <div class="caption">
+            <a class="portfolio-link" href="{{ route('kuesioner.d') }}">
+              <!-- <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/game.png') }}" alt="">
+              </div> -->
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
             </a>
           </div>
-
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
+            <a class="portfolio-link" href="{{ route('kuesioner.e') }}">
+              <!-- <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/submarine.png') }}" alt="">
+              </div> -->
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
             </a>
           </div>
-
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-              <div class="caption">
+            <a class="portfolio-link" href="{{ route('kuesioner.hukum') }}">
+              <!-- <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/submarine.png') }}" alt="">
+              </div> -->
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
             </a>
           </div>
-
         </div>
       </div>
     </section>

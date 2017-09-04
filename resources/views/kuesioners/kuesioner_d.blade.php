@@ -59,7 +59,7 @@
     <br>
     <a class="btn btn-success" href="{{ route('index') }}">Kembali</a>
     <hr class="star-primary">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd07ThTymWJihmGoaUTLLPJXGREDqx8QbpUlUTulJ5-L3lKqg/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfFg7a1BC4g5NWbfCyVYJU-PoUqKt1qUyY0Ge8N6uvpobKI3g/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div>
 
  <!-- Bootstrap core JavaScript -->
