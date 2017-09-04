@@ -134,7 +134,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cake.png') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -144,7 +144,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/circus.png') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -154,7 +154,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/game.png') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -164,7 +164,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/safe.png') }}" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -174,7 +174,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/cabin.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('freelancer/img/portfolio/submarine.png') }}" alt="">
             </a>
           </div>
         </div>
