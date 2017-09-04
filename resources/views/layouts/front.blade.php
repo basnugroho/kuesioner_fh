@@ -9,6 +9,7 @@
     <title>Alumni Fakultas Hukum</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="{{ asset('freelancer/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -19,6 +20,8 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('freelancer/css/freelancer.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.css">
+
+    
     <style>
       #jdl{
           background-color: #cccccc;
@@ -50,12 +53,11 @@
       iframe{
         overflow:hidden;
       }
-      #front {
-        background-image: url("freelancer/img/aa.jpg");
-        background-repeat: no-repeat;
-        background-position: stretch;
-        background-size:cover;
-        height: 700px;
+      #navbarResponsive {
+        font-size: 1.5rem;
+      }
+      .navbar-brand {
+        font-size: 2.5rem;
       }
   </style>
 
@@ -107,10 +109,43 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead" id="front">
-      <div class="container" >
-        
+    <header class="masthead">
+      <div class="container">
+        <!-- <img class="img-fluid" src="{{ asset('freelancer/img/profile.png') }}" alt=""> -->
         <div class="intro-text">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="{{ asset('uploads/sliders/1.jpg')}}" alt="1" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="{{ asset('uploads/sliders/2.jpg')}}" alt="2" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="{{ asset('uploads/sliders/3.jpg')}}" alt="3" style="width:100%;">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
           <span class="name">{{ $setting->site_name }}</span>
           <hr class="star-light">
           <span class="skills">{{ $setting->tagline }}</span>
@@ -342,6 +377,9 @@
     <!-- Custom scripts for this template -->
     <script src="{{ asset('freelancer/js/freelancer.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
         @if(Session::has('success'))
             toastr.success('{{ Session::get('success') }}')
